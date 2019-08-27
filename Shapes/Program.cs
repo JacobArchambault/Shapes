@@ -21,6 +21,12 @@ namespace Shapes
                 s.Draw();
             }
 
+            // Call the Draw() method of the ThreeDCircle.
+            ThreeDCircle o = new ThreeDCircle();
+            o.Draw();
+
+            // Call the Draw() method of o's parent.
+            ((Circle)o).Draw();
             Console.ReadLine();
         }
     }
